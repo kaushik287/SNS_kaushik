@@ -1,0 +1,10 @@
+apiVersion: notification.example.org/v1alpha1
+kind: SNSTopic
+metadata:
+  name: my-topic
+spec:
+  parameters:
+    name: Demotopic
+  compositionSelector:
+    matchLabels:
+      provider: aws
